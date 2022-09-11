@@ -7,7 +7,6 @@ if (strEntrada != null)
     int num = 0;
     if (int.TryParse(strEntrada, out num))
     {
-        int[] arrNum = new int[num];
         int soma = 0;
 
         Console.WriteLine("Os números múltiplos de 3 e 5 do valor "+ num + " são: ");
@@ -16,9 +15,8 @@ if (strEntrada != null)
         {
             if (i % 3 == 0 || i % 5 == 0)
             {
-                arrNum[i] = i;
                 soma += i;
-                Console.Write(arrNum[i] + " ");
+                Console.Write(i + " ");
             }
         }
 
